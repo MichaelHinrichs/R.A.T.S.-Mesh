@@ -8,11 +8,11 @@ namespace R.A.T.S_Mesh
     public class MESH
     {
         private string name;
-        private readonly List<string> textures;
-        private readonly List<Vector3> points;
-        private readonly List<Vector3> normals;
-        private readonly List<Vector2> uvs;
-        private readonly List<Vector3> faces;
+        private readonly List<string> textures = new();
+        private readonly List<Vector3> points = new();
+        private readonly List<Vector3> normals = new();
+        private readonly List<Vector2> uvs = new();
+        private readonly List<Vector3> faces = new();
 
         private static MESH Read(string meshFile)
         {
